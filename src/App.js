@@ -19,7 +19,7 @@ function App() {
       <Header setSearch={setSearch} />
       <main>
         <Routes>
-          <Route index path='/' element={<LandingPage />}></Route>
+          <Route index element={<LandingPage />}></Route>
           <Route path='/login' element={<LoginPage />}></Route>
           <Route path='/register' element={<RegisterPage />}></Route>
           <Route path='/profile' element={<ProfilePage />}></Route>
