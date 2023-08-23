@@ -19,13 +19,13 @@ function App() {
       <Header setSearch={setSearch} />
       <main>
         <Routes>
-          <Route path='/' element={<LandingPage />}></Route>
+          <Route index path='/' element={<LandingPage />}></Route>
           <Route path='/login' element={<LoginPage />}></Route>
           <Route path='/register' element={<RegisterPage />}></Route>
           <Route path='/profile' element={<ProfilePage />}></Route>
           <Route path='/myNotes/createNote' element={<CreateNote />}></Route>
           <Route path='/note/:id' element={<SingleNote />}></Route>
-          <Route path='/myNotes' element={() => <MyNotes search={search}/>}></Route>
+          <Route path='/myNotes' element={<MyNotes search={search}/>}></Route>
         </Routes>
       </main>
       <Footer />
