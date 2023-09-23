@@ -14,7 +14,7 @@ export const login = (email,password) => async (dispatch) => {
         };
 
         const {data} = await axios.post(
-            "https://notesphere-backend-hkk4.onrender.com/user/login",
+            "https://notesphere-backend-hkk4.onrender.com/login",
             {
                 email,
                 password,
