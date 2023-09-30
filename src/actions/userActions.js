@@ -15,7 +15,7 @@ export const login = (email,password) => async (dispatch) => {
         };
 
         const {data} = await axios.post(
-            "https://notesphere-backend.vercel.app/user/login",
+            "https://notesphere-backend-hkk4.onrender.com/user/login",
             {
                 email,
                 password,
@@ -55,7 +55,7 @@ export const register = (name,email,password,pic) => async (dispatch) => {
         };
 
         const {data} = await axios.post(
-            "https://notesphere-backend.vercel.app/user",
+            "https://notesphere-backend-hkk4.onrender.com/user",
             {
                 name,
                 email,
@@ -96,7 +96,7 @@ export const updateProfile = (user) => async (dispatch,getState) => {
             },
         };
 
-        const {data} = await axios.post("https://notesphere-backend.vercel.app/user/profile",user,config);
+        const {data} = await axios.post("https://notesphere-backend-hkk4.onrender.com/user/profile",user,config);
 
         dispatch({type:USER_UPDATE_SUCCESS,payload:data});
 
