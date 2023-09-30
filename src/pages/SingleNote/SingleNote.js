@@ -36,7 +36,7 @@ const SingleNote = () => {
 
     useEffect(() => {
         const fetching = async () => {
-            const { data } = await axios.get(`https://notesphere-backend.vercel.app/notes/${id}`);
+            const { data } = await axios.get(`https://notesphere-backend-hkk4.onrender.com/notes/${id}`);
             console.log(id);
             setTitle(data.title);
             setContent(data.content);
