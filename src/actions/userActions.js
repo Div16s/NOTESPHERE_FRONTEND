@@ -9,6 +9,7 @@ export const login = (email,password) => async (dispatch) => {
         const config  = {
             headers: {
                 "Content-type":"application/json",
+                "Access-Control-Allow-Origin": "*",
                 //'Authorization': `Bearer ${data.token}`,
             },
         };
@@ -48,6 +49,7 @@ export const register = (name,email,password,pic) => async (dispatch) => {
         const config  = {
             headers: {
                 "Content-type":"application/json",
+                "Access-Control-Allow-Origin": "*",
                 //'Authorization': `Bearer ${data.token}`,
             },
         };
@@ -90,6 +92,7 @@ export const updateProfile = (user) => async (dispatch,getState) => {
             headers: {
                 "Content-type":"application/json",
                 'Authorization': `Bearer ${userInfo.token}`,
+                "Access-Control-Allow-Origin": "*",
             },
         };
 
