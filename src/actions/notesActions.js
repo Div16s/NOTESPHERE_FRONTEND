@@ -16,7 +16,7 @@ export const listNotes = () => async (dispatch, getState) => {
             },
         };
 
-        const {data} = await axios.get('https://notesphere-backend.vercel.app/notes',config);
+        const {data} = await axios.get('https://notesphere-backend-hkk4.onrender.com/notes',config);
         dispatch({
             type:NOTE_LIST_SUCCESS,
             payload: data,
@@ -51,7 +51,7 @@ export const createNoteAction = (title,content,category) => async (dispatch, get
         };
 
         const {data} = await axios.post(
-            'https://notesphere-backend.vercel.app/notes/create',
+            'https://notesphere-backend-hkk4.onrender.com/notes/create',
             {title,content,category},
             config
         );
@@ -90,7 +90,7 @@ export const updateNoteAction = (id,title,content,category) => async (dispatch, 
         };
 
         const {data} = await axios.put(
-            `https://notesphere-backend.vercel.app/notes/${id}`,
+            `https://notesphere-backend-hkk4.onrender.com/notes/${id}`,
             {title,content,category},
             config,
         );
@@ -129,7 +129,7 @@ export const deleteNoteAction = (id) => async (dispatch, getState) => {
         };
 
         const {data} = await axios.delete(
-            `https://notesphere-backend.vercel.app/notes/${id}`,
+            `https://notesphere-backend-hkk4.onrender.com/notes/${id}`,
             config
         );
 
