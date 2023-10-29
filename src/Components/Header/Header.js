@@ -56,7 +56,7 @@ const Header = ({setSearch}) => {
                             <NavDropdown.Item href="/profile">My Profile</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item onClick={logoutHandler}>
-                                Logout
+                                Logout ➡️
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="#" disabled>
